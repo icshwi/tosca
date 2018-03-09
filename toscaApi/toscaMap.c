@@ -110,7 +110,7 @@ void toscaInit()
     {
         unsigned int dom, bus, dev, func;
         int fd;
-        char filename[50];
+        char filename[128];
 
         sscanf(globresults.gl_pathv[i]+sizeof(TOSCA_PCI_DIR),
             "%x:%x:%x.%x", &dom, &bus, &dev, &func);
